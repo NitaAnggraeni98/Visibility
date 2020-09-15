@@ -1,0 +1,23 @@
+<?php
+class User {
+
+    var $name = 'Nita';
+    public $username = 'Nita';
+    protected $brithdate = '08 Agustus 2003';
+    private $address = 'Bogor, Indonesia';
+
+    function showBio()
+    {
+        echo $this->name;
+        echo $this->username;
+        echo $this->brithdate;
+        echo $this->address;
+    }
+
+}
+
+// buat object $UserNita :D dari class User
+$UserNita = new User();
+
+// Menampilkan name
+echo $UserNita->name;
